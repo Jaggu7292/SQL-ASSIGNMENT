@@ -1,0 +1,17 @@
+using system
+
+namespace Area_circumsentance
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            float pi=3.14f;
+            Console.Write("enter rhe radius value");
+            float r = Convert.ToSingle(Console.ReadLine());
+            float res = 2*pi * r;
+            Console.WriteLine(res);
+            Console.ReadLine(); 
+        }
+    }
+}

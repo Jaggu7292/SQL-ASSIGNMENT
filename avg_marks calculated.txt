@@ -1,0 +1,25 @@
+using System;
+
+namespace Avg_Calculated
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] x = new int[]{ 19, 25, 35, 56, 67 };
+            int x1 = 67;
+            
+            for (int i = 0; i < x.Length; i++)
+            {
+                while(x1>x[i] )
+                {
+                    Console.WriteLine("The Highest marks " + x[i]);
+                }
+            }
+            Console.ReadLine();
+
+
+            
+        }
+    }
+}
