@@ -13,8 +13,8 @@ namespace Assignment1._1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //string CS = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
-            string CS = @"data source = DESKTOP-UJGE7M1\SQLEXPRESS;database = project1;integrated security = SSPI";
+            
+            string CS = @"data source = Jagadeesh\SQLEXPRESS;database = project1;integrated security = SSPI";
             using (SqlConnection con = new SqlConnection(CS))
             {
                 SqlCommand cmd = new SqlCommand("select WinningTeam from football where Status = 'Win';select * from football where TeamName1 ='Japan' or TeamName2='Japan'", con);
