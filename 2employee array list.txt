@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Collections;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace employee
+{
+    class Employee
+    {
+        public int EmpId { get; set; }
+        public string EmpName { get; set; }
+        public int EmpSal { get; set; }
+        public string EmpLoc { get; set; }
+
+
+    }
+
+    internal class ArrayListSample
+    {
+        static void Main(string[] args)
+        {
+           
+
+            ArrayList e = new ArrayList()
+            {
+                    new Employee{EmpId=1,EmpName="Jaggu",EmpSal=20000,EmpLoc="Hyd"},
+                    new Employee{EmpId=2,EmpName="jaya",EmpSal=25000,EmpLoc="Hyd"},
+                    new Employee{EmpId=3,EmpName="shali",EmpSal=32000,EmpLoc="Hyd"},
+                    new Employee{EmpId=3,EmpName="rit",EmpSal=40000,EmpLoc="Hyd"},
+                    new Employee{ EmpId=4, EmpName="vick"},
+            };
+            foreach (Employee i in e)
+            {
+                    Console.WriteLine(i.EmpId + " " + i.EmpName + " " + i.EmpSal + " " + i.EmpLoc);
+            }
+            Console.ReadKey();
+        }
+    }
+}
